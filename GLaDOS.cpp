@@ -4,11 +4,12 @@
 using namespace std;
 
 int main() {
-//	vector<double> Mummy (3);
+	vector<vector<double>> Mummy;
 	vector<double> child1 {1,0,0};
 	vector<double> child2 {0,1,0};
 	vector<double> child3 {0,0,1};
-	vector<double> Mummy[3] = {child1, child2, child3};
+	Mummy = {child1, child2, child3};
+	cout << (sizeof(Mummy[1])/8) << endl;
 	for(int i = 0; i < 3; i++){
 		cout << (Mummy[i])[i] << endl;
 	}
@@ -26,9 +27,10 @@ int main() {
 //	}
 //	cout << result[1] << result[5] <<result[9] << "\n";
 
- 
+//	string input = "34.5";
+//	double Lord_Peter_Mandelson; 
 //	string::size_type sz;
-//	double Lord_Peter_Mandelson = stod(input);
+//	Lord_Peter_Mandelson = stod(input);
 //	cout << Lord_Peter_Mandelson << "\n";
 
 
